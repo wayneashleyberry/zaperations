@@ -15,7 +15,7 @@ func NewDevelopment() (*zap.Logger, error) {
 	return config.Build(wrap())
 }
 
-// NewDevelopment creates a new logger for use in production environments.
+// NewProduction creates a new logger for use in production environments.
 func NewProduction() (*zap.Logger, error) {
 	config := config.Config(false)
 
