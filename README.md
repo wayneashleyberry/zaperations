@@ -1,6 +1,8 @@
 > Package zaperations provides a [Google Cloud Operations](https://cloud.google.com/products/operations) (formerly Stackdriver) compatible config for the [uber-go/zap](https://github.com/uber-go/zap) logger.
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/wayneashleyberry/zaperations.svg)](https://pkg.go.dev/github.com/wayneashleyberry/zaperations)
 [![Go](https://github.com/wayneashleyberry/zaperations/actions/workflows/go.yml/badge.svg)](https://github.com/wayneashleyberry/zaperations/actions/workflows/go.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/wayneashleyberry/zaperations)](https://goreportcard.com/report/github.com/wayneashleyberry/zaperations)
 
 ## Example
 

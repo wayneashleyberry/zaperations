@@ -5,14 +5,17 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
+// ProductionConfig creates a zap config for use in production environments.
 func ProductionConfig() zap.Config {
 	return Config(false)
 }
 
+// DevelopmentConfig creates a zap config for use in development environments.
 func DevelopmentConfig() zap.Config {
 	return Config(true)
 }
 
+// Config creates a new zap config.
 func Config(dev bool) zap.Config {
 	config := zap.NewProductionConfig()
 

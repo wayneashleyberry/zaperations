@@ -8,12 +8,14 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
+// NewDevelopment creates a new logger for use in development environments.
 func NewDevelopment() (*zap.Logger, error) {
 	config := config.Config(true)
 
 	return config.Build(wrap())
 }
 
+// NewDevelopment creates a new logger for use in production environments.
 func NewProduction() (*zap.Logger, error) {
 	config := config.Config(false)
 
