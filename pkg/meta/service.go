@@ -10,6 +10,7 @@ type ServiceContext struct {
 	Version string
 }
 
+// MarshalLogObject satisfies the zapcore.ObjectMarshaler interface.
 func (s ServiceContext) MarshalLogObject(enc zapcore.ObjectEncoder) error {
 	enc.AddString("service", s.Service)
 	enc.AddString("version", s.Version)
